@@ -34,16 +34,16 @@ a {
 
 .modal {
     height: 90vh;
-    width: calc(90vw - 4rem);
+    width: calc(100vw);
     position: absolute;
     background-color: inherit;
     color: white;
-    padding: 0 2rem;
+    padding: 2rem 0;
     display: none;
     font-family: monospace;
     text-align: center;
     letter-spacing: 0.05em;
     line-height: 0.8;
-    font-size: calc(100vh / 420);
+    font-size: calc(100vh / 500);
     white-space: nowrap;
 }
