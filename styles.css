@@ -43,7 +43,7 @@ a {
     font-family: monospace;
     text-align: center;
     letter-spacing: 0.05em;
-    line-height: 0.8;
+    line-height: 0.9em;
     /* font-size: calc(100vh / 500); */
     white-space: nowrap;
 }

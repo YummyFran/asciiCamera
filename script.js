@@ -9,7 +9,6 @@ const capture = async () => {
         modal.innerText = el
         modal.style.display = 'block'
     })
-
 }
 
 const imageToASCII = async (picture, size) => {
