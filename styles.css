@@ -20,6 +20,7 @@ video {
 a {
     position: absolute;
     left: 50%;
+    transform: translateX(-50%);
     bottom: 10vh;
     padding: 1rem;
     background-color: rgb(244, 115, 86);
@@ -44,4 +45,5 @@ a {
     letter-spacing: 0.05em;
     line-height: 0.8;
     font-size: calc(100vh / 420);
+    white-space: nowrap;
 }
