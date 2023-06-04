@@ -41,5 +41,7 @@ a {
     display: none;
     font-family: monospace;
     text-align: center;
-    line-height: 0.89;
+    letter-spacing: 0.05em;
+    line-height: 0.8;
+    /* font-size: calc(); */
 }
