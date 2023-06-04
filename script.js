@@ -5,7 +5,7 @@ const webcam = new Webcam(camera, "user", canvas)
 
 const capture = async () => {
     const picture = webcam.snap()
-    await imageToASCII(picture, 420).then( el => {
+    await imageToASCII(picture, parseInt(prompt("Enter size"))).then( el => {
         modal.innerText = el
         modal.style.display = 'block'
     })
@@ -19,10 +19,10 @@ const imageToASCII = async (picture, size) => {
     
         let asciiText = ''
     
-        image.resize(image.getWidth(), image.getHeight())
+        image.resize(size, Jimp.AUTO)
         image.grayscale()
         
-        // modal.style.fontSize = `${image.getHeight()/image.getHeight() * 1.3}px`
+        modal.style.fontSize = `calc(100vh / ${size/2})`
         for(let y = 0; y < image.getHeight(); y++) {
             for(let x = 0; x < image.getWidth(); x++) {
                 const { r, g, b } = Jimp.intToRGBA(image.getPixelColor(x, y));

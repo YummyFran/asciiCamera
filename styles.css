@@ -44,6 +44,6 @@ a {
     text-align: center;
     letter-spacing: 0.05em;
     line-height: 0.8;
-    font-size: calc(100vh / 500);
+    /* font-size: calc(100vh / 500); */
     white-space: nowrap;
 }
