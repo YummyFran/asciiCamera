@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(35, 33, 33);
+}
+
+canvas {
+    display: none;
+}
+
+video {
+    width: 90%;
+    height: 90vh;
+    position: relative;
+}
+
+a {
+    position: absolute;
+    left: 50%;
+    bottom: 10vh;
+    padding: 1rem;
+    background-color: rgb(244, 115, 86);
+    color: rgb(36, 43, 45);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.modal {
+    height: 90vh;
+    width: calc(90vw - 4rem);
+    position: absolute;
+    background-color: inherit;
+    color: white;
+    padding: 0 2rem;
+    display: none;
+    font-family: monospace;
+    text-align: center;
+    line-height: 0.89;
+}
